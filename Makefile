@@ -1,7 +1,7 @@
 all:
 
 proto:
-	cd protofiles && protoc --go_out=. *.proto
+	cd vendor && protoc --go_out=. *.proto
 
 install:
 	# https://developers.google.com/protocol-buffers/docs/gotutorial
