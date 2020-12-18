@@ -26,10 +26,6 @@ func main() {
 	fmt.Println(in)
 	fmt.Println("Length is", len(in))
 
-	// in, err := ioutil.ReadFile("fname.txt")
-	// if err != nil {
-	// log.Fatalln("Error reading file:", err)
-	// }
 	book := &pb.AddressBook{}
 	if err := proto.Unmarshal(in, book); err != nil {
 		log.Fatalln("Failed to parse address book:", err)
