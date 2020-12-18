@@ -24,6 +24,7 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println(in)
+	fmt.Println("Length is", len(in))
 
 	// in, err := ioutil.ReadFile("fname.txt")
 	// if err != nil {
